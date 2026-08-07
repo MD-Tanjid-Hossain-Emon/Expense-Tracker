@@ -40,13 +40,14 @@
         <input type="number" id="amount" min="0" step="0.01" placeholder="0.00" required />
 
         <label for="category">Category</label>
-        <select id="category">
-          <option value="Food">Food</option>
-          <option value="Transport">Transport</option>
-          <option value="Rent">Rent</option>
-          <option value="Utilities">Utilities</option>
-          <option value="Other">Other</option>
-        </select>
+        <input list="category-options" id="category" placeholder="Enter category" required />
+        <datalist id="category-options">
+          <option value="Food"></option>
+          <option value="Transport"></option>
+          <option value="Rent"></option>
+          <option value="Utilities"></option>
+          <option value="Other"></option>
+        </datalist>
 
         <button type="submit">Add expense</button>
       </form>
